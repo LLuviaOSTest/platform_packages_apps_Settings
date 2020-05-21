@@ -78,10 +78,10 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
     public CharSequence getSummary() {
         StringBuilder sb = new StringBuilder();
         sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
-        String LLuviaVersion = VersionUtils.getLLuviaVersion();
-        if (!LLuviaVersion.equals("")){
+        String LluviaVersion = VersionUtils.getLluviaVersion();
+        if (!LluviaVersion.equals("")){
             sb.append("\n");
-            sb.append(LLuviaVersion);
+            sb.append(LluviaVersion);
         }
         return sb.toString();
     }
